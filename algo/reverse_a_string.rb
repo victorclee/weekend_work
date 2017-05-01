@@ -3,6 +3,17 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+letters = string.split(//)
+
+x = string.length
+y = []
+
+letters.each do |letter|
+  y << letters[x-1]
+  x -= 1
+end
+
+p y.join
 
 end
 
