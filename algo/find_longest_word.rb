@@ -7,16 +7,18 @@
 
 def find_longest_word(sentence)
   words = sentence.split
-  x = 0
-  y = words[x]
+  # x = 0
+  # y = words[x]
+  z = words[0]
 
   words.each do |word|
-    if word.length > y[0].length
-      y = words[x]
+
+    if word.length > z.length
+      z = word
     end
-    x += 1
+    # x += 1
   end
-  p y
+  z
 end
 
 
